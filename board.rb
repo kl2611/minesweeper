@@ -4,7 +4,7 @@ class Board
   attr_reader :bomb_coords
 
   def initialize(size, num_bombs)
-    @user_board = Array.new(size) {Array.new(size)}
+    @user_board = Array.new(size) {Array.new(size, "*")}
     @hidden_board = Array.new(size) {Array.new(size)}
     @size = size
     @bomb_coords = []
